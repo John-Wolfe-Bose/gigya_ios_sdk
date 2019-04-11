@@ -716,7 +716,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  Retrieves whether login operations are restricted to the app context only
  
- @param dontLeaveApp don't leave app when user logins
+ Set to TRUE to not leave app when user logins
  */
 + (BOOL)dontLeaveApp;
 
