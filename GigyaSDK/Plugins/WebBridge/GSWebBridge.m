@@ -200,8 +200,8 @@
 
 - (void)getIDs:(NSString *)callbackID
 {
-    NSString *ucid = [NSString stringWithFormat:@"%@", [[Gigya sharedInstance] ucid]];
-    NSString *gmid = [NSString stringWithFormat:@"%@", [[Gigya sharedInstance] gmid]];
+    //NSString *ucid = [NSString stringWithFormat:@"%@", [[Gigya sharedInstance] ucid]];
+    //NSString *gmid = [NSString stringWithFormat:@"%@", [[Gigya sharedInstance] gmid]];
 
     NSDictionary *ids = @{ @"ucid": [[Gigya sharedInstance] ucid],
                            @"gcid": [[Gigya sharedInstance] gmid] };
