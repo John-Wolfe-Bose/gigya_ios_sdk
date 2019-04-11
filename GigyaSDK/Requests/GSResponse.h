@@ -36,7 +36,7 @@
  */
 @property (weak, readonly) NSString *callId;
 
-@property (weak, nonatomic) NSData *data;
+@property (weak, nonatomic) NSData *responseData;
 
 
 /** @name Accessing Keys and Values */

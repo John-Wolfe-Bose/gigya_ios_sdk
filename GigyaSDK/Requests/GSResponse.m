@@ -22,7 +22,7 @@
     
     [response addJSONData:data];
     response.method = method;
-    response.data = data;
+    response.responseData = data;
     
     int errorCode = [response[@"errorCode"] intValue];
     

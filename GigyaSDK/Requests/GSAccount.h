@@ -28,7 +28,7 @@
 /*!
  Custom data that was stored for the user.
  */
-@property (weak, nonatomic, readonly) NSDictionary *data;
+@property (weak, nonatomic, readonly) NSDictionary *accountData;
 
 /*!
  The user's nickname, this may be either the nickname provided by the connected provider or a concatenation of the first and last names.
