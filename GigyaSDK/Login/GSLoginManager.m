@@ -254,7 +254,7 @@
             [provider logout];
     }
     
-    [Gigya sharedInstance].session = nil;
+    [Gigya sharedInstance].session = (_Nonnull id)nil;
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
