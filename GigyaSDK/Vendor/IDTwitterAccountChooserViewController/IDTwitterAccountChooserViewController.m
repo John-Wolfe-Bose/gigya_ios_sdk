@@ -72,11 +72,6 @@
 }
 
 
-- (void)viewDidUnload {
-	[super viewDidUnload];
-}
-
-
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	[imagesDictionary removeAllObjects];
