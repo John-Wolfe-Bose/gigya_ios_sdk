@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EEC8DAB24AD1C1EFE0D9D4494CFB5A4B28F41759",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EEC8DAB24AD1C1EFE0D9D4494CFB5A4B28F41759" : 9223372036854775807,
+    "2773B7BB7A5F7FFF8258936FA6D5B981BCEB19E6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "60E35D12-6A8C-4B20-B356-44C3CDADD446",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EEC8DAB24AD1C1EFE0D9D4494CFB5A4B28F41759" : "gigya-ios-sdk\/",
+    "2773B7BB7A5F7FFF8258936FA6D5B981BCEB19E6" : "iOSTesterApp_sources\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GigyaSDK",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GigyaSDK.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/denis-mitin\/iOSTesterApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2773B7BB7A5F7FFF8258936FA6D5B981BCEB19E6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/il1a-gl-dev.gigya.net\/SDKs\/gigya-ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EEC8DAB24AD1C1EFE0D9D4494CFB5A4B28F41759"
+    }
+  ]
+}

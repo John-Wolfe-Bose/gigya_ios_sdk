@@ -1,0 +1,999 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		84F02EF21F9897FE005D1BEE /* GigyaSDK-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 84F02EF31F9897FE005D1BEE /* Build configuration list for PBXAggregateTarget "GigyaSDK-Universal" */;
+			buildPhases = (
+				84F02EF61F98981D005D1BEE /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "GigyaSDK-Universal";
+			productName = "GigyaSDK-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8306751120EE69C7007706DF /* GSLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD1C1E560093002872F9 /* GSLoginManager.m */; };
+		83F6903B20EE209700580583 /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6903A20EE209700580583 /* LineSDK.framework */; };
+		83F6904B20EE22F400580583 /* GSWeChatProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F6904920EE22F400580583 /* GSWeChatProvider.h */; };
+		83F6904C20EE22F400580583 /* GSWeChatProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F6904A20EE22F400580583 /* GSWeChatProvider.m */; };
+		83F6905420EE241500580583 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F6905020EE241400580583 /* WXApi.h */; };
+		83F6905520EE241500580583 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F6905120EE241400580583 /* WXApiObject.h */; };
+		83F6905620EE241500580583 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F6905220EE241400580583 /* WechatAuthSDK.h */; };
+		83F6905820EE268500580583 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6905320EE241400580583 /* libWeChatSDK.a */; };
+		83F6905A20EE269000580583 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6905920EE269000580583 /* libsqlite3.tbd */; };
+		83F6905C20EE26A100580583 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6905B20EE26A100580583 /* CoreTelephony.framework */; };
+		83F6905E20EE26B600580583 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6905D20EE26B600580583 /* SystemConfiguration.framework */; };
+		83F6906020EE26C200580583 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6905F20EE26C200580583 /* libc++.tbd */; };
+		83F6906220EE270600580583 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6906120EE270600580583 /* libz.tbd */; };
+		84F02EEC1F989528005D1BEE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F02EEB1F989526005D1BEE /* Bolts.framework */; };
+		84F02EED1F989528005D1BEE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F02EE91F989526005D1BEE /* FBSDKCoreKit.framework */; };
+		84F02EEE1F989528005D1BEE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F02EEA1F989526005D1BEE /* FBSDKLoginKit.framework */; };
+		84F02EF01F989535005D1BEE /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F02EEF1F989531005D1BEE /* FBSDKShareKit.framework */; };
+		A9B9CD641E560093002872F9 /* NSArray+GSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD011E560093002872F9 /* NSArray+GSArray.h */; };
+		A9B9CD651E560093002872F9 /* NSArray+GSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD021E560093002872F9 /* NSArray+GSArray.m */; };
+		A9B9CD661E560093002872F9 /* NSData+GSBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD031E560093002872F9 /* NSData+GSBase64.h */; };
+		A9B9CD671E560093002872F9 /* NSData+GSBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD041E560093002872F9 /* NSData+GSBase64.m */; };
+		A9B9CD681E560093002872F9 /* NSDictionary+GSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD051E560093002872F9 /* NSDictionary+GSDictionary.h */; };
+		A9B9CD691E560093002872F9 /* NSDictionary+GSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD061E560093002872F9 /* NSDictionary+GSDictionary.m */; };
+		A9B9CD6A1E560093002872F9 /* NSError+GSError.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD071E560093002872F9 /* NSError+GSError.h */; };
+		A9B9CD6B1E560093002872F9 /* NSError+GSError.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD081E560093002872F9 /* NSError+GSError.m */; };
+		A9B9CD6C1E560093002872F9 /* NSString+GSString.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD091E560093002872F9 /* NSString+GSString.h */; };
+		A9B9CD6D1E560093002872F9 /* NSString+GSString.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD0A1E560093002872F9 /* NSString+GSString.m */; };
+		A9B9CD6E1E560093002872F9 /* NSURL+GSURL.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD0B1E560093002872F9 /* NSURL+GSURL.h */; };
+		A9B9CD6F1E560093002872F9 /* NSURL+GSURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD0C1E560093002872F9 /* NSURL+GSURL.m */; };
+		A9B9CD701E560093002872F9 /* UIView+GSView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD0D1E560093002872F9 /* UIView+GSView.h */; };
+		A9B9CD711E560093002872F9 /* UIView+GSView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD0E1E560093002872F9 /* UIView+GSView.m */; };
+		A9B9CD721E560093002872F9 /* Gigya.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD0F1E560093002872F9 /* Gigya.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CD731E560093002872F9 /* Gigya.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD101E560093002872F9 /* Gigya.m */; };
+		A9B9CD741E560093002872F9 /* Gigya+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD111E560093002872F9 /* Gigya+Internal.h */; };
+		A9B9CD751E560093002872F9 /* GSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD121E560093002872F9 /* GSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CD761E560093002872F9 /* GSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD131E560093002872F9 /* GSLogger.m */; };
+		A9B9CD771E560093002872F9 /* GSSession.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD141E560093002872F9 /* GSSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CD781E560093002872F9 /* GSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD151E560093002872F9 /* GSSession.m */; };
+		A9B9CD791E560093002872F9 /* GSSessionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD161E560093002872F9 /* GSSessionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CD7A1E560093002872F9 /* GSSessionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD171E560093002872F9 /* GSSessionInfo.m */; };
+		A9B9CD7B1E560093002872F9 /* KeychainStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD181E560093002872F9 /* KeychainStorage.h */; };
+		A9B9CD7C1E560093002872F9 /* KeychainStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD191E560093002872F9 /* KeychainStorage.m */; };
+		A9B9CD7D1E560093002872F9 /* GSLoginManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD1B1E560093002872F9 /* GSLoginManager.h */; };
+		A9B9CD7F1E560093002872F9 /* GSLoginRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD1D1E560093002872F9 /* GSLoginRequest.h */; };
+		A9B9CD801E560093002872F9 /* GSLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD1E1E560093002872F9 /* GSLoginRequest.m */; };
+		A9B9CD811E560093002872F9 /* GSGigyaSafariProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD211E560093002872F9 /* GSGigyaSafariProvider.h */; };
+		A9B9CD821E560093002872F9 /* GSGigyaSafariProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD221E560093002872F9 /* GSGigyaSafariProvider.m */; };
+		A9B9CD831E560093002872F9 /* GSGigyaWebViewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD231E560093002872F9 /* GSGigyaWebViewProvider.h */; };
+		A9B9CD841E560093002872F9 /* GSGigyaWebViewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD241E560093002872F9 /* GSGigyaWebViewProvider.m */; };
+		A9B9CD851E560093002872F9 /* GSLoginProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD251E560093002872F9 /* GSLoginProvider.h */; };
+		A9B9CD861E560093002872F9 /* GSFacebookProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD271E560093002872F9 /* GSFacebookProvider.h */; };
+		A9B9CD871E560093002872F9 /* GSFacebookProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD281E560093002872F9 /* GSFacebookProvider.m */; };
+		A9B9CD881E560093002872F9 /* GSGoogleProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD291E560093002872F9 /* GSGoogleProvider.h */; };
+		A9B9CD891E560093002872F9 /* GSGoogleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD2A1E560093002872F9 /* GSGoogleProvider.m */; };
+		A9B9CD8A1E560093002872F9 /* GSNativeLoginProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD2B1E560093002872F9 /* GSNativeLoginProvider.h */; };
+		A9B9CD8B1E560093002872F9 /* GSNativeLoginProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD2C1E560093002872F9 /* GSNativeLoginProvider.m */; };
+		A9B9CD8C1E560093002872F9 /* GSTwitterProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD2D1E560093002872F9 /* GSTwitterProvider.h */; };
+		A9B9CD8D1E560093002872F9 /* GSTwitterProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD2E1E560093002872F9 /* GSTwitterProvider.m */; };
+		A9B9CD8E1E560093002872F9 /* GSProviderSelectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD301E560093002872F9 /* GSProviderSelectionViewController.h */; };
+		A9B9CD8F1E560093002872F9 /* GSProviderSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD311E560093002872F9 /* GSProviderSelectionViewController.m */; };
+		A9B9CD901E560093002872F9 /* GSWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD321E560093002872F9 /* GSWebViewController.h */; };
+		A9B9CD911E560093002872F9 /* GSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD331E560093002872F9 /* GSWebViewController.m */; };
+		A9B9CD921E560093002872F9 /* GSPluginView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD361E560093002872F9 /* GSPluginView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CD931E560093002872F9 /* GSPluginView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD371E560093002872F9 /* GSPluginView.m */; };
+		A9B9CD951E560093002872F9 /* GSPluginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD391E560093002872F9 /* GSPluginViewController.m */; };
+		A9B9CD961E560093002872F9 /* GSWebBridge+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD3B1E560093002872F9 /* GSWebBridge+Internal.h */; };
+		A9B9CD971E560093002872F9 /* GSWebBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD3C1E560093002872F9 /* GSWebBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CD981E560093002872F9 /* GSWebBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD3D1E560093002872F9 /* GSWebBridge.m */; };
+		A9B9CD991E560093002872F9 /* GSWebBridgeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD3E1E560093002872F9 /* GSWebBridgeManager.h */; };
+		A9B9CD9A1E560093002872F9 /* GSWebBridgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD3F1E560093002872F9 /* GSWebBridgeManager.m */; };
+		A9B9CD9B1E560093002872F9 /* GSAccountsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD411E560093002872F9 /* GSAccountsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CD9C1E560093002872F9 /* GSJSONCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD421E560093002872F9 /* GSJSONCollection.h */; };
+		A9B9CD9D1E560093002872F9 /* GSSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD431E560093002872F9 /* GSSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CD9E1E560093002872F9 /* GSSocializeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD441E560093002872F9 /* GSSocializeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CD9F1E560093002872F9 /* GSAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD461E560093002872F9 /* GSAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CDA01E560093002872F9 /* GSAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD471E560093002872F9 /* GSAccount.m */; };
+		A9B9CDA11E560093002872F9 /* GSObject+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD481E560093002872F9 /* GSObject+Internal.h */; };
+		A9B9CDA21E560093002872F9 /* GSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD491E560093002872F9 /* GSObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CDA31E560093002872F9 /* GSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD4A1E560093002872F9 /* GSObject.m */; };
+		A9B9CDA41E560093002872F9 /* GSRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD4B1E560093002872F9 /* GSRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CDA51E560093002872F9 /* GSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD4C1E560093002872F9 /* GSRequest.m */; };
+		A9B9CDA61E560093002872F9 /* GSResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD4D1E560093002872F9 /* GSResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CDA71E560093002872F9 /* GSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD4E1E560093002872F9 /* GSResponse.m */; };
+		A9B9CDA81E560093002872F9 /* GSUser.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD4F1E560093002872F9 /* GSUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B9CDA91E560093002872F9 /* GSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD501E560093002872F9 /* GSUser.m */; };
+		A9B9CDAB1E560093002872F9 /* GigyaSDK-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD531E560093002872F9 /* GigyaSDK-Prefix.pch */; };
+		A9B9CDAC1E560093002872F9 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD561E560093002872F9 /* Base64Transcoder.c */; };
+		A9B9CDAD1E560093002872F9 /* Base64Transcoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD571E560093002872F9 /* Base64Transcoder.h */; };
+		A9B9CDB21E560093002872F9 /* GSMBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD5F1E560093002872F9 /* GSMBProgressHUD.h */; };
+		A9B9CDB31E560093002872F9 /* GSMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD601E560093002872F9 /* GSMBProgressHUD.m */; };
+		A9B9CDB41E560093002872F9 /* IDTwitterAccountChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B9CD621E560093002872F9 /* IDTwitterAccountChooserViewController.h */; };
+		A9B9CDB51E560093002872F9 /* IDTwitterAccountChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B9CD631E560093002872F9 /* IDTwitterAccountChooserViewController.m */; };
+		A9B9CDC31E560945002872F9 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B9CDC21E560945002872F9 /* GoogleSignIn.framework */; };
+		A9C931E71EC4469400AD9F17 /* GSLineProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C931E51EC4469400AD9F17 /* GSLineProvider.h */; };
+		A9C931E81EC4469400AD9F17 /* GSLineProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C931E61EC4469400AD9F17 /* GSLineProvider.m */; };
+		E714CA6A22198A820059CDE2 /* GSignatureUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E714CA6822198A820059CDE2 /* GSignatureUtils.h */; };
+		E714CA6B22198A820059CDE2 /* GSignatureUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E714CA6922198A820059CDE2 /* GSignatureUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		83F6903A20EE209700580583 /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LineSDK.framework; path = GigyaSDK/Vendor/LineSDK/LineSDK.framework; sourceTree = "<group>"; };
+		83F6904920EE22F400580583 /* GSWeChatProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWeChatProvider.h; sourceTree = "<group>"; };
+		83F6904A20EE22F400580583 /* GSWeChatProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWeChatProvider.m; sourceTree = "<group>"; };
+		83F6904D20EE23D500580583 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = GigyaSDK/Vendor/WeChat/libWeChatSDK.a; sourceTree = "<group>"; };
+		83F6905020EE241400580583 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		83F6905120EE241400580583 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		83F6905220EE241400580583 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		83F6905320EE241400580583 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		83F6905920EE269000580583 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		83F6905B20EE26A100580583 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		83F6905D20EE26B600580583 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		83F6905F20EE26C200580583 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		83F6906120EE270600580583 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		84F02EDE1F989070005D1BEE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = GigyaSDK/Vendor/Facebook/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		84F02EDF1F989070005D1BEE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = GigyaSDK/Vendor/Facebook/Bolts.framework; sourceTree = "<group>"; };
+		84F02EE01F989070005D1BEE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = GigyaSDK/Vendor/Facebook/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		84F02EE91F989526005D1BEE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		84F02EEA1F989526005D1BEE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		84F02EEB1F989526005D1BEE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../../../../../FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
+		84F02EEF1F989531005D1BEE /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../../../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		A9B9CCF51E560070002872F9 /* GigyaSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GigyaSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B9CD011E560093002872F9 /* NSArray+GSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GSArray.h"; sourceTree = "<group>"; };
+		A9B9CD021E560093002872F9 /* NSArray+GSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GSArray.m"; sourceTree = "<group>"; };
+		A9B9CD031E560093002872F9 /* NSData+GSBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GSBase64.h"; sourceTree = "<group>"; };
+		A9B9CD041E560093002872F9 /* NSData+GSBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GSBase64.m"; sourceTree = "<group>"; };
+		A9B9CD051E560093002872F9 /* NSDictionary+GSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+GSDictionary.h"; sourceTree = "<group>"; };
+		A9B9CD061E560093002872F9 /* NSDictionary+GSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+GSDictionary.m"; sourceTree = "<group>"; };
+		A9B9CD071E560093002872F9 /* NSError+GSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+GSError.h"; sourceTree = "<group>"; };
+		A9B9CD081E560093002872F9 /* NSError+GSError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+GSError.m"; sourceTree = "<group>"; };
+		A9B9CD091E560093002872F9 /* NSString+GSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GSString.h"; sourceTree = "<group>"; };
+		A9B9CD0A1E560093002872F9 /* NSString+GSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GSString.m"; sourceTree = "<group>"; };
+		A9B9CD0B1E560093002872F9 /* NSURL+GSURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+GSURL.h"; sourceTree = "<group>"; };
+		A9B9CD0C1E560093002872F9 /* NSURL+GSURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+GSURL.m"; sourceTree = "<group>"; };
+		A9B9CD0D1E560093002872F9 /* UIView+GSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GSView.h"; sourceTree = "<group>"; };
+		A9B9CD0E1E560093002872F9 /* UIView+GSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GSView.m"; sourceTree = "<group>"; };
+		A9B9CD0F1E560093002872F9 /* Gigya.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gigya.h; sourceTree = "<group>"; };
+		A9B9CD101E560093002872F9 /* Gigya.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gigya.m; sourceTree = "<group>"; };
+		A9B9CD111E560093002872F9 /* Gigya+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gigya+Internal.h"; sourceTree = "<group>"; };
+		A9B9CD121E560093002872F9 /* GSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLogger.h; sourceTree = "<group>"; };
+		A9B9CD131E560093002872F9 /* GSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLogger.m; sourceTree = "<group>"; };
+		A9B9CD141E560093002872F9 /* GSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSession.h; sourceTree = "<group>"; };
+		A9B9CD151E560093002872F9 /* GSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSession.m; sourceTree = "<group>"; };
+		A9B9CD161E560093002872F9 /* GSSessionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSessionInfo.h; sourceTree = "<group>"; };
+		A9B9CD171E560093002872F9 /* GSSessionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSessionInfo.m; sourceTree = "<group>"; };
+		A9B9CD181E560093002872F9 /* KeychainStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainStorage.h; sourceTree = "<group>"; };
+		A9B9CD191E560093002872F9 /* KeychainStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainStorage.m; sourceTree = "<group>"; };
+		A9B9CD1B1E560093002872F9 /* GSLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLoginManager.h; sourceTree = "<group>"; };
+		A9B9CD1C1E560093002872F9 /* GSLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLoginManager.m; sourceTree = "<group>"; };
+		A9B9CD1D1E560093002872F9 /* GSLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLoginRequest.h; sourceTree = "<group>"; };
+		A9B9CD1E1E560093002872F9 /* GSLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLoginRequest.m; sourceTree = "<group>"; };
+		A9B9CD211E560093002872F9 /* GSGigyaSafariProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSGigyaSafariProvider.h; sourceTree = "<group>"; };
+		A9B9CD221E560093002872F9 /* GSGigyaSafariProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSGigyaSafariProvider.m; sourceTree = "<group>"; };
+		A9B9CD231E560093002872F9 /* GSGigyaWebViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSGigyaWebViewProvider.h; sourceTree = "<group>"; };
+		A9B9CD241E560093002872F9 /* GSGigyaWebViewProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSGigyaWebViewProvider.m; sourceTree = "<group>"; };
+		A9B9CD251E560093002872F9 /* GSLoginProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLoginProvider.h; sourceTree = "<group>"; };
+		A9B9CD271E560093002872F9 /* GSFacebookProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFacebookProvider.h; sourceTree = "<group>"; };
+		A9B9CD281E560093002872F9 /* GSFacebookProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSFacebookProvider.m; sourceTree = "<group>"; };
+		A9B9CD291E560093002872F9 /* GSGoogleProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSGoogleProvider.h; sourceTree = "<group>"; };
+		A9B9CD2A1E560093002872F9 /* GSGoogleProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSGoogleProvider.m; sourceTree = "<group>"; };
+		A9B9CD2B1E560093002872F9 /* GSNativeLoginProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNativeLoginProvider.h; sourceTree = "<group>"; };
+		A9B9CD2C1E560093002872F9 /* GSNativeLoginProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNativeLoginProvider.m; sourceTree = "<group>"; };
+		A9B9CD2D1E560093002872F9 /* GSTwitterProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTwitterProvider.h; sourceTree = "<group>"; };
+		A9B9CD2E1E560093002872F9 /* GSTwitterProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTwitterProvider.m; sourceTree = "<group>"; };
+		A9B9CD301E560093002872F9 /* GSProviderSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSProviderSelectionViewController.h; sourceTree = "<group>"; };
+		A9B9CD311E560093002872F9 /* GSProviderSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSProviderSelectionViewController.m; sourceTree = "<group>"; };
+		A9B9CD321E560093002872F9 /* GSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWebViewController.h; sourceTree = "<group>"; };
+		A9B9CD331E560093002872F9 /* GSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWebViewController.m; sourceTree = "<group>"; };
+		A9B9CD361E560093002872F9 /* GSPluginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSPluginView.h; sourceTree = "<group>"; };
+		A9B9CD371E560093002872F9 /* GSPluginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSPluginView.m; sourceTree = "<group>"; };
+		A9B9CD381E560093002872F9 /* GSPluginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSPluginViewController.h; sourceTree = "<group>"; };
+		A9B9CD391E560093002872F9 /* GSPluginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSPluginViewController.m; sourceTree = "<group>"; };
+		A9B9CD3B1E560093002872F9 /* GSWebBridge+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GSWebBridge+Internal.h"; sourceTree = "<group>"; };
+		A9B9CD3C1E560093002872F9 /* GSWebBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWebBridge.h; sourceTree = "<group>"; };
+		A9B9CD3D1E560093002872F9 /* GSWebBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWebBridge.m; sourceTree = "<group>"; };
+		A9B9CD3E1E560093002872F9 /* GSWebBridgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWebBridgeManager.h; sourceTree = "<group>"; };
+		A9B9CD3F1E560093002872F9 /* GSWebBridgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWebBridgeManager.m; sourceTree = "<group>"; };
+		A9B9CD411E560093002872F9 /* GSAccountsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAccountsDelegate.h; sourceTree = "<group>"; };
+		A9B9CD421E560093002872F9 /* GSJSONCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSJSONCollection.h; sourceTree = "<group>"; };
+		A9B9CD431E560093002872F9 /* GSSessionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSessionDelegate.h; sourceTree = "<group>"; };
+		A9B9CD441E560093002872F9 /* GSSocializeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSocializeDelegate.h; sourceTree = "<group>"; };
+		A9B9CD461E560093002872F9 /* GSAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAccount.h; sourceTree = "<group>"; };
+		A9B9CD471E560093002872F9 /* GSAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAccount.m; sourceTree = "<group>"; };
+		A9B9CD481E560093002872F9 /* GSObject+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GSObject+Internal.h"; sourceTree = "<group>"; };
+		A9B9CD491E560093002872F9 /* GSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSObject.h; sourceTree = "<group>"; };
+		A9B9CD4A1E560093002872F9 /* GSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSObject.m; sourceTree = "<group>"; };
+		A9B9CD4B1E560093002872F9 /* GSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRequest.h; sourceTree = "<group>"; };
+		A9B9CD4C1E560093002872F9 /* GSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRequest.m; sourceTree = "<group>"; };
+		A9B9CD4D1E560093002872F9 /* GSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSResponse.h; sourceTree = "<group>"; };
+		A9B9CD4E1E560093002872F9 /* GSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSResponse.m; sourceTree = "<group>"; };
+		A9B9CD4F1E560093002872F9 /* GSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSUser.h; sourceTree = "<group>"; };
+		A9B9CD501E560093002872F9 /* GSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSUser.m; sourceTree = "<group>"; };
+		A9B9CD521E560093002872F9 /* GigyaSDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GigyaSDK-Info.plist"; sourceTree = "<group>"; };
+		A9B9CD531E560093002872F9 /* GigyaSDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GigyaSDK-Prefix.pch"; sourceTree = "<group>"; };
+		A9B9CD561E560093002872F9 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		A9B9CD571E560093002872F9 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		A9B9CD5F1E560093002872F9 /* GSMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSMBProgressHUD.h; sourceTree = "<group>"; };
+		A9B9CD601E560093002872F9 /* GSMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSMBProgressHUD.m; sourceTree = "<group>"; };
+		A9B9CD621E560093002872F9 /* IDTwitterAccountChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDTwitterAccountChooserViewController.h; sourceTree = "<group>"; };
+		A9B9CD631E560093002872F9 /* IDTwitterAccountChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDTwitterAccountChooserViewController.m; sourceTree = "<group>"; };
+		A9B9CDC21E560945002872F9 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		A9C931E51EC4469400AD9F17 /* GSLineProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSLineProvider.h; path = "GigyaSDK/Login Providers/Native Login Providers/GSLineProvider.h"; sourceTree = SOURCE_ROOT; };
+		A9C931E61EC4469400AD9F17 /* GSLineProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLineProvider.m; sourceTree = "<group>"; };
+		E714CA6822198A820059CDE2 /* GSignatureUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSignatureUtils.h; path = Utils/GSignatureUtils.h; sourceTree = "<group>"; };
+		E714CA6922198A820059CDE2 /* GSignatureUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GSignatureUtils.m; path = Utils/GSignatureUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9B9CCF11E560070002872F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F6906220EE270600580583 /* libz.tbd in Frameworks */,
+				83F6906020EE26C200580583 /* libc++.tbd in Frameworks */,
+				83F6905E20EE26B600580583 /* SystemConfiguration.framework in Frameworks */,
+				83F6905C20EE26A100580583 /* CoreTelephony.framework in Frameworks */,
+				83F6905A20EE269000580583 /* libsqlite3.tbd in Frameworks */,
+				83F6905820EE268500580583 /* libWeChatSDK.a in Frameworks */,
+				A9B9CDC31E560945002872F9 /* GoogleSignIn.framework in Frameworks */,
+				84F02EEC1F989528005D1BEE /* Bolts.framework in Frameworks */,
+				84F02EF01F989535005D1BEE /* FBSDKShareKit.framework in Frameworks */,
+				84F02EED1F989528005D1BEE /* FBSDKCoreKit.framework in Frameworks */,
+				84F02EEE1F989528005D1BEE /* FBSDKLoginKit.framework in Frameworks */,
+				83F6903B20EE209700580583 /* LineSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83F6904F20EE241400580583 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				83F6905020EE241400580583 /* WXApi.h */,
+				83F6905120EE241400580583 /* WXApiObject.h */,
+				83F6905220EE241400580583 /* WechatAuthSDK.h */,
+				83F6905320EE241400580583 /* libWeChatSDK.a */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		84F02EDA1F988FBF005D1BEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83F6906120EE270600580583 /* libz.tbd */,
+				83F6905F20EE26C200580583 /* libc++.tbd */,
+				83F6905D20EE26B600580583 /* SystemConfiguration.framework */,
+				83F6905B20EE26A100580583 /* CoreTelephony.framework */,
+				83F6905920EE269000580583 /* libsqlite3.tbd */,
+				83F6904D20EE23D500580583 /* libWeChatSDK.a */,
+				83F6903A20EE209700580583 /* LineSDK.framework */,
+				84F02EDF1F989070005D1BEE /* Bolts.framework */,
+				84F02EDE1F989070005D1BEE /* FBSDKCoreKit.framework */,
+				84F02EE01F989070005D1BEE /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9B9CCEB1E560070002872F9 = {
+			isa = PBXGroup;
+			children = (
+				A9B9CCF71E560070002872F9 /* GigyaSDK */,
+				A9B9CCF61E560070002872F9 /* Products */,
+				84F02EDA1F988FBF005D1BEE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9B9CCF61E560070002872F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CCF51E560070002872F9 /* GigyaSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9B9CCF71E560070002872F9 /* GigyaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD001E560093002872F9 /* Categories */,
+				A9B9CD0F1E560093002872F9 /* Gigya.h */,
+				A9B9CD101E560093002872F9 /* Gigya.m */,
+				A9B9CD111E560093002872F9 /* Gigya+Internal.h */,
+				A9B9CD121E560093002872F9 /* GSLogger.h */,
+				A9B9CD131E560093002872F9 /* GSLogger.m */,
+				A9B9CD141E560093002872F9 /* GSSession.h */,
+				A9B9CD151E560093002872F9 /* GSSession.m */,
+				A9B9CD161E560093002872F9 /* GSSessionInfo.h */,
+				A9B9CD171E560093002872F9 /* GSSessionInfo.m */,
+				E714CA6322198A080059CDE2 /* Utils */,
+				A9B9CD181E560093002872F9 /* KeychainStorage.h */,
+				A9B9CD1F1E560093002872F9 /* Login Providers */,
+				A9B9CD191E560093002872F9 /* KeychainStorage.m */,
+				A9B9CD1A1E560093002872F9 /* Login */,
+				A9B9CD341E560093002872F9 /* Plugins */,
+				A9B9CD401E560093002872F9 /* Protocols */,
+				A9B9CD451E560093002872F9 /* Requests */,
+				A9B9CD511E560093002872F9 /* SupportingFiles */,
+				A9B9CD541E560093002872F9 /* Vendor */,
+			);
+			path = GigyaSDK;
+			sourceTree = "<group>";
+		};
+		A9B9CD001E560093002872F9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD011E560093002872F9 /* NSArray+GSArray.h */,
+				A9B9CD021E560093002872F9 /* NSArray+GSArray.m */,
+				A9B9CD031E560093002872F9 /* NSData+GSBase64.h */,
+				A9B9CD041E560093002872F9 /* NSData+GSBase64.m */,
+				A9B9CD051E560093002872F9 /* NSDictionary+GSDictionary.h */,
+				A9B9CD061E560093002872F9 /* NSDictionary+GSDictionary.m */,
+				A9B9CD071E560093002872F9 /* NSError+GSError.h */,
+				A9B9CD081E560093002872F9 /* NSError+GSError.m */,
+				A9B9CD091E560093002872F9 /* NSString+GSString.h */,
+				A9B9CD0A1E560093002872F9 /* NSString+GSString.m */,
+				A9B9CD0B1E560093002872F9 /* NSURL+GSURL.h */,
+				A9B9CD0C1E560093002872F9 /* NSURL+GSURL.m */,
+				A9B9CD0D1E560093002872F9 /* UIView+GSView.h */,
+				A9B9CD0E1E560093002872F9 /* UIView+GSView.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A9B9CD1A1E560093002872F9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD1B1E560093002872F9 /* GSLoginManager.h */,
+				A9B9CD1C1E560093002872F9 /* GSLoginManager.m */,
+				A9B9CD1D1E560093002872F9 /* GSLoginRequest.h */,
+				A9B9CD1E1E560093002872F9 /* GSLoginRequest.m */,
+				A9B9CD2F1E560093002872F9 /* Login UI */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A9B9CD1F1E560093002872F9 /* Login Providers */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD201E560093002872F9 /* Gigya Login Providers */,
+				A9B9CD251E560093002872F9 /* GSLoginProvider.h */,
+				A9B9CD261E560093002872F9 /* Native Login Providers */,
+			);
+			path = "Login Providers";
+			sourceTree = "<group>";
+		};
+		A9B9CD201E560093002872F9 /* Gigya Login Providers */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD211E560093002872F9 /* GSGigyaSafariProvider.h */,
+				A9B9CD221E560093002872F9 /* GSGigyaSafariProvider.m */,
+				A9B9CD231E560093002872F9 /* GSGigyaWebViewProvider.h */,
+				A9B9CD241E560093002872F9 /* GSGigyaWebViewProvider.m */,
+			);
+			path = "Gigya Login Providers";
+			sourceTree = "<group>";
+		};
+		A9B9CD261E560093002872F9 /* Native Login Providers */ = {
+			isa = PBXGroup;
+			children = (
+				83F6904920EE22F400580583 /* GSWeChatProvider.h */,
+				83F6904A20EE22F400580583 /* GSWeChatProvider.m */,
+				A9C931E51EC4469400AD9F17 /* GSLineProvider.h */,
+				A9C931E61EC4469400AD9F17 /* GSLineProvider.m */,
+				A9B9CD271E560093002872F9 /* GSFacebookProvider.h */,
+				A9B9CD281E560093002872F9 /* GSFacebookProvider.m */,
+				A9B9CD291E560093002872F9 /* GSGoogleProvider.h */,
+				A9B9CD2A1E560093002872F9 /* GSGoogleProvider.m */,
+				A9B9CD2B1E560093002872F9 /* GSNativeLoginProvider.h */,
+				A9B9CD2C1E560093002872F9 /* GSNativeLoginProvider.m */,
+				A9B9CD2D1E560093002872F9 /* GSTwitterProvider.h */,
+				A9B9CD2E1E560093002872F9 /* GSTwitterProvider.m */,
+			);
+			path = "Native Login Providers";
+			sourceTree = "<group>";
+		};
+		A9B9CD2F1E560093002872F9 /* Login UI */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD301E560093002872F9 /* GSProviderSelectionViewController.h */,
+				A9B9CD311E560093002872F9 /* GSProviderSelectionViewController.m */,
+				A9B9CD321E560093002872F9 /* GSWebViewController.h */,
+				A9B9CD331E560093002872F9 /* GSWebViewController.m */,
+			);
+			path = "Login UI";
+			sourceTree = "<group>";
+		};
+		A9B9CD341E560093002872F9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD351E560093002872F9 /* PluginView */,
+				A9B9CD3A1E560093002872F9 /* WebBridge */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		A9B9CD351E560093002872F9 /* PluginView */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD361E560093002872F9 /* GSPluginView.h */,
+				A9B9CD371E560093002872F9 /* GSPluginView.m */,
+				A9B9CD381E560093002872F9 /* GSPluginViewController.h */,
+				A9B9CD391E560093002872F9 /* GSPluginViewController.m */,
+			);
+			path = PluginView;
+			sourceTree = "<group>";
+		};
+		A9B9CD3A1E560093002872F9 /* WebBridge */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD3B1E560093002872F9 /* GSWebBridge+Internal.h */,
+				A9B9CD3C1E560093002872F9 /* GSWebBridge.h */,
+				A9B9CD3D1E560093002872F9 /* GSWebBridge.m */,
+				A9B9CD3E1E560093002872F9 /* GSWebBridgeManager.h */,
+				A9B9CD3F1E560093002872F9 /* GSWebBridgeManager.m */,
+			);
+			path = WebBridge;
+			sourceTree = "<group>";
+		};
+		A9B9CD401E560093002872F9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD411E560093002872F9 /* GSAccountsDelegate.h */,
+				A9B9CD421E560093002872F9 /* GSJSONCollection.h */,
+				A9B9CD431E560093002872F9 /* GSSessionDelegate.h */,
+				A9B9CD441E560093002872F9 /* GSSocializeDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A9B9CD451E560093002872F9 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD461E560093002872F9 /* GSAccount.h */,
+				A9B9CD471E560093002872F9 /* GSAccount.m */,
+				A9B9CD481E560093002872F9 /* GSObject+Internal.h */,
+				A9B9CD491E560093002872F9 /* GSObject.h */,
+				A9B9CD4A1E560093002872F9 /* GSObject.m */,
+				A9B9CD4B1E560093002872F9 /* GSRequest.h */,
+				A9B9CD4C1E560093002872F9 /* GSRequest.m */,
+				A9B9CD4D1E560093002872F9 /* GSResponse.h */,
+				A9B9CD4E1E560093002872F9 /* GSResponse.m */,
+				A9B9CD4F1E560093002872F9 /* GSUser.h */,
+				A9B9CD501E560093002872F9 /* GSUser.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		A9B9CD511E560093002872F9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD521E560093002872F9 /* GigyaSDK-Info.plist */,
+				A9B9CD531E560093002872F9 /* GigyaSDK-Prefix.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A9B9CD541E560093002872F9 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				83F6904F20EE241400580583 /* WeChat */,
+				A9B9CD551E560093002872F9 /* Base64Transcoder */,
+				A9B9CD581E560093002872F9 /* Facebook */,
+				A9B9CD5C1E560093002872F9 /* Google */,
+				A9B9CD5E1E560093002872F9 /* GSMBProgressHUD */,
+				A9B9CD611E560093002872F9 /* IDTwitterAccountChooserViewController */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		A9B9CD551E560093002872F9 /* Base64Transcoder */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD561E560093002872F9 /* Base64Transcoder.c */,
+				A9B9CD571E560093002872F9 /* Base64Transcoder.h */,
+			);
+			path = Base64Transcoder;
+			sourceTree = "<group>";
+		};
+		A9B9CD581E560093002872F9 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				84F02EEF1F989531005D1BEE /* FBSDKShareKit.framework */,
+				84F02EEB1F989526005D1BEE /* Bolts.framework */,
+				84F02EE91F989526005D1BEE /* FBSDKCoreKit.framework */,
+				84F02EEA1F989526005D1BEE /* FBSDKLoginKit.framework */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		A9B9CD5C1E560093002872F9 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CDC21E560945002872F9 /* GoogleSignIn.framework */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		A9B9CD5E1E560093002872F9 /* GSMBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD5F1E560093002872F9 /* GSMBProgressHUD.h */,
+				A9B9CD601E560093002872F9 /* GSMBProgressHUD.m */,
+			);
+			path = GSMBProgressHUD;
+			sourceTree = "<group>";
+		};
+		A9B9CD611E560093002872F9 /* IDTwitterAccountChooserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9CD621E560093002872F9 /* IDTwitterAccountChooserViewController.h */,
+				A9B9CD631E560093002872F9 /* IDTwitterAccountChooserViewController.m */,
+			);
+			path = IDTwitterAccountChooserViewController;
+			sourceTree = "<group>";
+		};
+		E714CA6322198A080059CDE2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E714CA6822198A820059CDE2 /* GSignatureUtils.h */,
+				E714CA6922198A820059CDE2 /* GSignatureUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A9B9CCF21E560070002872F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B9CDA41E560093002872F9 /* GSRequest.h in Headers */,
+				A9B9CDA61E560093002872F9 /* GSResponse.h in Headers */,
+				A9B9CDA81E560093002872F9 /* GSUser.h in Headers */,
+				A9B9CD9F1E560093002872F9 /* GSAccount.h in Headers */,
+				A9B9CD971E560093002872F9 /* GSWebBridge.h in Headers */,
+				A9B9CD791E560093002872F9 /* GSSessionInfo.h in Headers */,
+				A9B9CD921E560093002872F9 /* GSPluginView.h in Headers */,
+				A9B9CD9D1E560093002872F9 /* GSSessionDelegate.h in Headers */,
+				A9B9CD9B1E560093002872F9 /* GSAccountsDelegate.h in Headers */,
+				A9B9CD9E1E560093002872F9 /* GSSocializeDelegate.h in Headers */,
+				A9B9CD751E560093002872F9 /* GSLogger.h in Headers */,
+				A9B9CD721E560093002872F9 /* Gigya.h in Headers */,
+				A9B9CD771E560093002872F9 /* GSSession.h in Headers */,
+				A9B9CDA21E560093002872F9 /* GSObject.h in Headers */,
+				A9B9CD7F1E560093002872F9 /* GSLoginRequest.h in Headers */,
+				83F6905420EE241500580583 /* WXApi.h in Headers */,
+				E714CA6A22198A820059CDE2 /* GSignatureUtils.h in Headers */,
+				A9B9CD741E560093002872F9 /* Gigya+Internal.h in Headers */,
+				83F6905520EE241500580583 /* WXApiObject.h in Headers */,
+				83F6905620EE241500580583 /* WechatAuthSDK.h in Headers */,
+				83F6904B20EE22F400580583 /* GSWeChatProvider.h in Headers */,
+				A9B9CD681E560093002872F9 /* NSDictionary+GSDictionary.h in Headers */,
+				A9B9CD6E1E560093002872F9 /* NSURL+GSURL.h in Headers */,
+				A9B9CD7D1E560093002872F9 /* GSLoginManager.h in Headers */,
+				A9B9CD6A1E560093002872F9 /* NSError+GSError.h in Headers */,
+				A9B9CD661E560093002872F9 /* NSData+GSBase64.h in Headers */,
+				A9B9CDB41E560093002872F9 /* IDTwitterAccountChooserViewController.h in Headers */,
+				A9B9CDAD1E560093002872F9 /* Base64Transcoder.h in Headers */,
+				A9B9CD961E560093002872F9 /* GSWebBridge+Internal.h in Headers */,
+				A9B9CD6C1E560093002872F9 /* NSString+GSString.h in Headers */,
+				A9B9CD831E560093002872F9 /* GSGigyaWebViewProvider.h in Headers */,
+				A9B9CDA11E560093002872F9 /* GSObject+Internal.h in Headers */,
+				A9B9CD901E560093002872F9 /* GSWebViewController.h in Headers */,
+				A9B9CD991E560093002872F9 /* GSWebBridgeManager.h in Headers */,
+				A9B9CD881E560093002872F9 /* GSGoogleProvider.h in Headers */,
+				A9B9CDAB1E560093002872F9 /* GigyaSDK-Prefix.pch in Headers */,
+				A9B9CD811E560093002872F9 /* GSGigyaSafariProvider.h in Headers */,
+				A9B9CD701E560093002872F9 /* UIView+GSView.h in Headers */,
+				A9B9CD851E560093002872F9 /* GSLoginProvider.h in Headers */,
+				A9B9CDB21E560093002872F9 /* GSMBProgressHUD.h in Headers */,
+				A9B9CD7B1E560093002872F9 /* KeychainStorage.h in Headers */,
+				A9B9CD8A1E560093002872F9 /* GSNativeLoginProvider.h in Headers */,
+				A9B9CD861E560093002872F9 /* GSFacebookProvider.h in Headers */,
+				A9C931E71EC4469400AD9F17 /* GSLineProvider.h in Headers */,
+				A9B9CD9C1E560093002872F9 /* GSJSONCollection.h in Headers */,
+				A9B9CD641E560093002872F9 /* NSArray+GSArray.h in Headers */,
+				A9B9CD8C1E560093002872F9 /* GSTwitterProvider.h in Headers */,
+				A9B9CD8E1E560093002872F9 /* GSProviderSelectionViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A9B9CCF41E560070002872F9 /* GigyaSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B9CCFD1E560070002872F9 /* Build configuration list for PBXNativeTarget "GigyaSDK" */;
+			buildPhases = (
+				A9B9CCF01E560070002872F9 /* Sources */,
+				A9B9CCF11E560070002872F9 /* Frameworks */,
+				A9B9CCF21E560070002872F9 /* Headers */,
+				A9B9CCF31E560070002872F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GigyaSDK;
+			productName = GigyaSDK;
+			productReference = A9B9CCF51E560070002872F9 /* GigyaSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9B9CCEC1E560070002872F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Gigya;
+				TargetAttributes = {
+					84F02EF21F9897FE005D1BEE = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = RQ4NX29V75;
+						ProvisioningStyle = Automatic;
+					};
+					A9B9CCF41E560070002872F9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T48CNFXFQH;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A9B9CCEF1E560070002872F9 /* Build configuration list for PBXProject "GigyaSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9B9CCEB1E560070002872F9;
+			productRefGroup = A9B9CCF61E560070002872F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9B9CCF41E560070002872F9 /* GigyaSDK */,
+				84F02EF21F9897FE005D1BEE /* GigyaSDK-Universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9B9CCF31E560070002872F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F02EF61F98981D005D1BEE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "UNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}/iOS\"\n\n# Step 1. Build Device and Simulator versions on iOS\nxcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\"  -project \"${PROJECT_NAME}.xcodeproj\" -scheme \"${PROJECT_NAME}\"  -sdk iphonesimulator clean build\nxcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -project \"${PROJECT_NAME}.xcodeproj\" -scheme \"${PROJECT_NAME}\" -sdk iphoneos clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/iOS\"\n\n# Step 3. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/iOS/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n\n# Step 4. Convenience step to copy the framework to the project's directory\nmkdir -p \"${TMPDIR}/${PROJECT_NAME}/Frameworks/iOS\"\n\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/iOS/${PROJECT_NAME}.framework\" \"${TMPDIR}/${PROJECT_NAME}/Frameworks/iOS\"\n\necho \"full path: ${UNIVERSAL_OUTPUTFOLDER}/iOS/${PROJECT_NAME}.framework\"\n# Step 6. Create .tar.gz file for posting on the binary repository\ncd \"${TMPDIR}\"\nopen \"${TMPDIR}/${PROJECT_NAME}/Frameworks/iOS\"\n\n\n# We nest the framework inside a Frameworks folder so that it unarchives correctly\ntar -zcf \"${PROJECT_NAME}.framework.tar.gz\" \"${PROJECT_NAME}/Frameworks/\"\nmv \"${PROJECT_NAME}.framework.tar.gz\" \"${PROJECT_DIR}/\"\n\n# Step 7. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9B9CCF01E560070002872F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B9CD691E560093002872F9 /* NSDictionary+GSDictionary.m in Sources */,
+				A9B9CDB31E560093002872F9 /* GSMBProgressHUD.m in Sources */,
+				A9B9CD841E560093002872F9 /* GSGigyaWebViewProvider.m in Sources */,
+				A9B9CD7C1E560093002872F9 /* KeychainStorage.m in Sources */,
+				A9B9CD711E560093002872F9 /* UIView+GSView.m in Sources */,
+				A9B9CD821E560093002872F9 /* GSGigyaSafariProvider.m in Sources */,
+				A9B9CD7A1E560093002872F9 /* GSSessionInfo.m in Sources */,
+				A9B9CD651E560093002872F9 /* NSArray+GSArray.m in Sources */,
+				A9B9CD761E560093002872F9 /* GSLogger.m in Sources */,
+				8306751120EE69C7007706DF /* GSLoginManager.m in Sources */,
+				A9B9CD871E560093002872F9 /* GSFacebookProvider.m in Sources */,
+				A9B9CDA71E560093002872F9 /* GSResponse.m in Sources */,
+				A9B9CDA31E560093002872F9 /* GSObject.m in Sources */,
+				A9B9CD931E560093002872F9 /* GSPluginView.m in Sources */,
+				A9B9CD9A1E560093002872F9 /* GSWebBridgeManager.m in Sources */,
+				A9B9CDA51E560093002872F9 /* GSRequest.m in Sources */,
+				A9B9CDA01E560093002872F9 /* GSAccount.m in Sources */,
+				A9B9CD8D1E560093002872F9 /* GSTwitterProvider.m in Sources */,
+				A9B9CD911E560093002872F9 /* GSWebViewController.m in Sources */,
+				A9B9CD731E560093002872F9 /* Gigya.m in Sources */,
+				E714CA6B22198A820059CDE2 /* GSignatureUtils.m in Sources */,
+				A9B9CD6B1E560093002872F9 /* NSError+GSError.m in Sources */,
+				A9B9CD6D1E560093002872F9 /* NSString+GSString.m in Sources */,
+				A9B9CD981E560093002872F9 /* GSWebBridge.m in Sources */,
+				A9B9CDB51E560093002872F9 /* IDTwitterAccountChooserViewController.m in Sources */,
+				A9B9CD6F1E560093002872F9 /* NSURL+GSURL.m in Sources */,
+				A9B9CD781E560093002872F9 /* GSSession.m in Sources */,
+				A9B9CD8B1E560093002872F9 /* GSNativeLoginProvider.m in Sources */,
+				A9B9CD951E560093002872F9 /* GSPluginViewController.m in Sources */,
+				A9C931E81EC4469400AD9F17 /* GSLineProvider.m in Sources */,
+				A9B9CD891E560093002872F9 /* GSGoogleProvider.m in Sources */,
+				83F6904C20EE22F400580583 /* GSWeChatProvider.m in Sources */,
+				A9B9CD8F1E560093002872F9 /* GSProviderSelectionViewController.m in Sources */,
+				A9B9CD671E560093002872F9 /* NSData+GSBase64.m in Sources */,
+				A9B9CDAC1E560093002872F9 /* Base64Transcoder.c in Sources */,
+				A9B9CD801E560093002872F9 /* GSLoginRequest.m in Sources */,
+				A9B9CDA91E560093002872F9 /* GSUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84F02EF41F9897FE005D1BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQ4NX29V75;
+				ENABLE_BITCODE = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7s armv7";
+			};
+			name = Debug;
+		};
+		84F02EF51F9897FE005D1BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQ4NX29V75;
+				ENABLE_BITCODE = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7s armv7";
+			};
+			name = Release;
+		};
+		A9B9CCFB1E560070002872F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9B9CCFC1E560070002872F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9B9CCFE1E560070002872F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T48CNFXFQH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GigyaSDK/Vendor/Facebook",
+					"$(PROJECT_DIR)/GigyaSDK/Vendor/Google",
+					"$(PROJECT_DIR)/GigyaSDK/Vendor/LineSDK",
+				);
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "GigyaSDK/SupportingFiles/GigyaSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GigyaSDK/Vendor/WeChat",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigya.GigyaSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		A9B9CCFF1E560070002872F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T48CNFXFQH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GigyaSDK/Vendor/Facebook",
+					"$(PROJECT_DIR)/GigyaSDK/Vendor/Google",
+					"$(PROJECT_DIR)/GigyaSDK/Vendor/LineSDK",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "GigyaSDK/SupportingFiles/GigyaSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GigyaSDK/Vendor/WeChat",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigya.GigyaSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F02EF31F9897FE005D1BEE /* Build configuration list for PBXAggregateTarget "GigyaSDK-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F02EF41F9897FE005D1BEE /* Debug */,
+				84F02EF51F9897FE005D1BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B9CCEF1E560070002872F9 /* Build configuration list for PBXProject "GigyaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B9CCFB1E560070002872F9 /* Debug */,
+				A9B9CCFC1E560070002872F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B9CCFD1E560070002872F9 /* Build configuration list for PBXNativeTarget "GigyaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B9CCFE1E560070002872F9 /* Debug */,
+				A9B9CCFF1E560070002872F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9B9CCEC1E560070002872F9 /* Project object */;
+}
