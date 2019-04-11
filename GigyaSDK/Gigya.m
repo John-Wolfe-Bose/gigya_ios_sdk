@@ -102,10 +102,10 @@
         KeychainStorageGetDataHandler completionHandler = ^(NSData *keychainSessionData, NSError *keychainError) {
             // load session attempt finished
             if (keychainSessionData) {
-                _session = (GSSession *)[NSKeyedUnarchiver unarchiveObjectWithData:keychainSessionData];
+                self->_session = (GSSession *)[NSKeyedUnarchiver unarchiveObjectWithData:keychainSessionData];
                 
-                if (!_session || ![_session isValid]) {
-                    _session = nil;
+                if (!self->_session || ![self->_session isValid]) {
+                    self->_session = nil;
                     clearKeychainSession = YES;
                 }
             }
@@ -120,7 +120,7 @@
                                           completionHandler:nil];
             }
             self.sessionLoaded = YES;
-            dispatch_semaphore_signal(_semaphore);
+            dispatch_semaphore_signal(self->_semaphore);
         };
         
         // start loading session

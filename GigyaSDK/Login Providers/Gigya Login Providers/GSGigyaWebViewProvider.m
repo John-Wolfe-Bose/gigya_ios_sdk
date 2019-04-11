@@ -55,10 +55,10 @@
         }
         else {
             // If a different view controller, we display the webview as dialog
-            _dialogNavigationController = [[UINavigationController alloc] initWithRootViewController:webViewController];
-            _dialogNavigationController.modalPresentationStyle = UIModalPresentationFormSheet;
-            _dialogNavigationController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-            _dialogNavigationController.view.backgroundColor = [UIColor whiteColor];
+            self->_dialogNavigationController = [[UINavigationController alloc] initWithRootViewController:webViewController];
+            self->_dialogNavigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+            self->_dialogNavigationController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+            self->_dialogNavigationController.view.backgroundColor = [UIColor whiteColor];
             webViewController.webView.scalesPageToFit = YES;
             
             if (parameters[@"captionText"]) {
@@ -71,7 +71,7 @@
                 webViewController.title = @"Login";
             }
             
-            [viewController presentViewController:_dialogNavigationController
+            [viewController presentViewController:self->_dialogNavigationController
                                          animated:YES
                                        completion:nil];
         }

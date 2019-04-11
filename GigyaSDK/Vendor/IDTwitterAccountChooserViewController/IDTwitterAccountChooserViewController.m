@@ -116,14 +116,14 @@
 				return;
 			}
 			NSString *name = responseDictionary[@"name"];
-			if(realNamesDictionary[username] == nil && name != nil) {
+            if(self->realNamesDictionary[username] == nil && name != nil) {
 				dispatch_async(dispatch_get_main_queue(), ^{
-					realNamesDictionary[username] = name;
+                    self->realNamesDictionary[username] = name;
 					[self.tableView reloadData];
 				});
 			}
 			NSString *profileImageURLString = responseDictionary[@"profile_image_url"];
-			if(imagesDictionary[username] == nil && profileImageURLString != nil) {
+            if(self->imagesDictionary[username] == nil && profileImageURLString != nil) {
 				NSString *filename = [[profileImageURLString componentsSeparatedByString:@"/"] lastObject];
 				NSString *extension = [filename pathExtension];
 				NSString *basename = [filename stringByDeletingPathExtension];
@@ -147,9 +147,9 @@
 					UIImage *image = [UIImage imageWithCGImage:[biggerImage CGImage]
 														 scale:2.0
 												   orientation:UIImageOrientationUp];
-					if(imagesDictionary[username] == nil) {
+                    if(self->imagesDictionary[username] == nil) {
 						dispatch_async(dispatch_get_main_queue(), ^{
-							imagesDictionary[username] = image;
+                            self->imagesDictionary[username] = image;
 							[self.tableView reloadData];
 						});
 					}
@@ -166,8 +166,8 @@
 
 - (IBAction)cancel:(id)sender {
 	[self dismissViewControllerAnimated:YES completion:^{
-		if(completionHandler != nil) {
-			completionHandler(nil);
+        if(self->completionHandler != nil) {
+            self->completionHandler(nil);
 			return;
 		}
 		if(self.accountChooserDelegate != nil && [self.accountChooserDelegate conformsToProtocol:@protocol(IDTwitterAccountChooserViewControllerDelegate)] &&
@@ -233,8 +233,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[self dismissViewControllerAnimated:YES completion:^{
 		ACAccount *account = (self.twitterAccounts)[indexPath.row];
-		if(completionHandler != nil) {
-			completionHandler(account);
+        if(self->completionHandler != nil) {
+            self->completionHandler(account);
 			return;
 		}
 		if(self.accountChooserDelegate != nil && [self.accountChooserDelegate conformsToProtocol:@protocol(IDTwitterAccountChooserViewControllerDelegate)] &&

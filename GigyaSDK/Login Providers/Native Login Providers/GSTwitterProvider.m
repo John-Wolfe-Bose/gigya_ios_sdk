@@ -82,7 +82,7 @@
             else {
                 Class acAccountStore = NSClassFromString(@"ACAccountStore");
                 if (!self.accountStore)
-                    _accountStore = [[acAccountStore alloc] init];
+                    self->_accountStore = [[acAccountStore alloc] init];
                 
                 self.accountType = [self.accountStore accountTypeWithAccountTypeIdentifier:@"com.apple.twitter"];
                 self.reverseAuthParam = reverseAuthParamString;

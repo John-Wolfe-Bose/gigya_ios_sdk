@@ -175,7 +175,7 @@
                 [self finishWithError:error];
             }
             else if (!fbAccessTokenBeforeLogin || ![fbAccessToken.appID isEqualToString:fbAccessTokenBeforeLogin.appID] || ![fbAccessToken.userID isEqualToString:fbAccessTokenBeforeLogin.userID] || ![Gigya isSessionValid]) {
-                _isLoggedIn = YES;
+                self->_isLoggedIn = YES;
 
                 [self finishWithSession:[self fbAccessToken]];
                 [weakViewController dismissViewControllerAnimated: YES completion: nil];

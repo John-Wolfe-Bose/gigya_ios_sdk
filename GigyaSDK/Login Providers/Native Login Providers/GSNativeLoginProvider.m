@@ -140,7 +140,7 @@
         // Push a new WebViewController with provider login page
         GSWebViewController *webViewController = [[GSWebViewController alloc] initWithURL:url];
         webViewController.delegate = self;
-        _backgroundWebView = webViewController;
+        self->_backgroundWebView = webViewController;
         [webViewController startWebView];
     }];
 }
